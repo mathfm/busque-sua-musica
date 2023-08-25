@@ -4,24 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1 id="titulo">Buscar Musicas</h1>
+            <h1 id="titulo">Busque seu artista/musica favorito</h1>
             <div class="container-forms">
-                <form action="">
-                    <input class="buscar" type="search" name="nome do artista" id="nome-artista" placeholder="Digite o nome do artista">
+                <form id="buscar-msc">
+                    <input class="buscar" type="search" name="nome do artista" id="nome-artista" placeholder="Digite o nome do artista" required>
                     <input id="btn-enviar" type="submit" value="Procurar">
                 </form>
             </div>
         </div>
     </header>
     <main>
-        
+        <table>
+            <thead>
+                <tr class="estilo-table">
+                    <th class="capa-table">Capa</th>
+                    <th class="nome-musica">Musica</th>
+                    <th class="nome-artista">Artista</th>
+                    <th class="previa-msc">Album</th>
+                </tr>
+            </thead>
+            <tbody class="conteudo-tabela">
+                <tr>
+                    <td>
+                        <img src="https://e-cdn-images.dzcdn.net/images/artist/798978022681b94c9757287f613e8c13/250x250-000000-80-0-0.jpg"
+                            alt="" srcset="" width="100">
+                    </td>
+                    <td>Eram os deuses os astrounautas</td>
+                    <td>Um Barril De Rap</td>
+                    <td>Cd Dos Meninos</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
     
+    <script src="script.js"></script>
 </body>
 </html>
