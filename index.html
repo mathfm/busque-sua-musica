@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="icons/icons8-music-library-ios-16-96.png" type="image/x-icon">
+    <title>Busque sua Musica</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1 id="titulo">Busque seu artista/musica favorito</h1>
+            <h1 id="titulo">Busque seu artista/álbum favorito</h1>
             <div class="container-forms">
                 <form id="buscar-msc">
                     <input class="buscar" type="search" name="nome do artista" id="nome-artista" placeholder="Digite o nome do artista" required>
@@ -20,7 +20,11 @@
         </div>
     </header>
     <main>
-        <table>
+
+        <h2 class="loading hide">Carregando...</h2>
+
+
+        <table class="tabela-principal hide">
             <thead>
                 <tr class="estilo-table">
                     <th class="capa-table">Capa</th>
@@ -30,19 +34,10 @@
                 </tr>
             </thead>
             <tbody class="conteudo-tabela">
-                <tr>
-                    <td>
-                        <img src="https://e-cdn-images.dzcdn.net/images/artist/798978022681b94c9757287f613e8c13/250x250-000000-80-0-0.jpg"
-                            alt="" srcset="" width="100">
-                    </td>
-                    <td>Eram os deuses os astrounautas</td>
-                    <td>Um Barril De Rap</td>
-                    <td>Cd Dos Meninos</td>
-                </tr>
             </tbody>
         </table>
     </main>
     
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
